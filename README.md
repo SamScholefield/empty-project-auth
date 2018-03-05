@@ -81,4 +81,9 @@ Assuming you have Node, NPM and the Angular CLI installed use the below where `<
 * `$ git clone https://github.com/SamScholefield/empty-project-auth <my-new-project-directory>`
 * `$ cd <my-new-project-directory>`
 * `$ npm install`
-* `$ ng serve`
+  Now at this stage you might want to remove the Git origin so you can push it to your own repository later:
+* `$ git remote rm origin` //remove this origin
+* `$ git remote add origin https://github.com/your-username/your-repo-name` //add your own
+* `$ git remote -v` // check it's all good
+  Now all that's taken care of:
+* `$ ng serve` //run the app
