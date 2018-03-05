@@ -17,10 +17,10 @@ export class AuthService {
     this.firebaseAuth.auth
       .createUserWithEmailAndPassword(email, password)
       .then(value => {
-        console.log("Success!", value);
+        console.log("REGISTERED", value);
       })
       .catch(err => {
-        console.log("Something went wrong:", err.message);
+        console.log("REGISTRATION ERROR:", err.message);
       });
   }
 
@@ -28,10 +28,10 @@ export class AuthService {
     this.firebaseAuth.auth
       .signInWithEmailAndPassword(email, password)
       .then(value => {
-        console.log("Nice, it worked!");
+        console.log("ACCESS GRANTED");
       })
       .catch(err => {
-        console.log("Something went wrong:", err.message);
+        console.log("AUTHENTICATION ERROR:", err.message);
       });
   }
 

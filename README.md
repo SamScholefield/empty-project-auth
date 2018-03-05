@@ -1,6 +1,13 @@
-# EmptyProject
+# EmptyProjectAuth
 
 An empty project setup for quick start Angular 5 development. Incorporates the following:
+
+### AngularFire
+
+#### Authentication
+
+Firebase authentication service for email/password with sign in, register and sign out methods. Also a route guard utilising Router module `CanActivate`.
+Requires authentication type email/password enabled for Firebase and author firebase config in `environment.ts` and/or `environment.prod.ts`
 
 ### Angular Material
 
@@ -18,15 +25,9 @@ Theme switching is done using a checkbox via `theming.component.ts` and `theming
 
 `theming.component.ts` can be placed anywhere (eg. `../users/:id/settings`) and will communicate the theme switch via service.
 
-WARNING: This is my first service/observable/subscription and I can tell it's all sorts of wrong, but it works so hopefully it'll improve over time
+WARNING: This is my first service/observable/subscription and I can tell it's all sorts of wrong, but it works so hopefully it'll improve over time.
 
 TODO: Get user theme preference on init
-
-### AngularFire
-
-Requires author firebase config in `environment.ts` and/or `environment.prod.ts`
-
-TODO: build emptyProject with firebase.auth and guarded routes
 
 ### Google Analytics
 
@@ -77,7 +78,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Assuming you have Node, NPM and the Angular CLI installed use the below where `<my-new-project-directory>` is the author specified name of the directory to be created to hold the clone.
 
-* `$ git clone https://github.com/SamScholefield/empty-project <my-new-project-directory>`
+* `$ git clone https://github.com/SamScholefield/empty-project-auth <my-new-project-directory>`
 * `$ cd <my-new-project-directory>`
 * `$ npm install`
 * `$ ng serve`
